@@ -1,44 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Study Society Rules</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      padding: 30px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-    }
-    h1 {
-      text-align: center;
-    }
-    ul {
-      line-height: 1.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Society | Official Guidelines</title>
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-main: #2d2a2a;
+            --text-muted: #5e5a5a;
+            --accent-color: #7289da;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #1a1818;
+        }
+
+        .enforcement-notice {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .report-section {
+            background: #f3f3f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        .report-section p {
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+        .report-section ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: rule-counter;
+            padding: 0;
+        }
+
+        ol li {
+            counter-increment: rule-counter;
+            display: flex;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        ol li::before {
+            content: counter(rule-counter) ".";
+            font-weight: 900;
+            min-width: 45px;
+            margin-right: 15px;
+            text-align: right;
+            color: #000;
+        }
+
+        .sub-text {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📘 Study Society Rules</h1>
 
-    <ul>
-      <li>Be respectful to everyone.</li>
-      <li>No NSFW, harassment, or hate speech.</li>
-      <li>Use study VCs for studying only.</li>
-      <li>No spamming or self-promotion.</li>
-      <li>Follow Discord TOS at all times.</li>
-      <li>Staff decisions are final.</li>
-    </ul>
+    <div class="content-wrapper">
+        <h1>Study Society Rules</h1>
+        <p class="enforcement-notice">🚨 The following regulations are rigorously upheld to maintain our academic environment.</p>
 
-    <p><strong>By staying in this server, you agree to these rules.</strong></p>
-  </div>
+        <div class="report-section">
+            <p>Should you witness a breach of protocol or encounter a disruptive individual, please notify the administration immediately:</p>
+            <ul>
+                <li>Direct Message the <strong>"Contact Staff"</strong> automated support bot within the server.</li>
+            </ul>
+        </div>
+
+        <section>
+            <h2>👋 Fundamental Protocols</h2>
+            <ol>
+                <li>These mandates extend to all facets of the community, including active voice sessions, public correspondence, private communications, and user metadata (profiles, statuses, and identifiers).</li>
+                <li>Transgressions may result in immediate and irrevocable revocation of access without prior formal notification.</li>
+                <li>The circumvention of administrative penalties via secondary accounts or external platforms is strictly prohibited and will lead to a comprehensive ban of all associated identities.</li>
+                <li>The administrative team reserves the unilateral right to execute any measures deemed necessary to preserve the integrity of the society.</li>
+                <li>Members are required to adhere strictly to the Discord Terms of Service and Community Guidelines.</li>
+                <li>Access to the Study Society is restricted to individuals who meet the minimum age of digital consent within their respective jurisdictions.</li>
+                <li>Members are expected to actively champion and uphold these community standards.</li>
+                <li>Malicious utilization of the reporting system, including the submission of fallacious allegations or spam, is strictly forbidden.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>👤 Confidentiality & Privacy</h2>
+            <ol start="9">
+                <li>The solicitation or "phishing" of private credentials or sensitive data is prohibited.</li>
+                <li>Sharing the private information of other constituents without explicit, documented consent is a violation of community trust.</li>
+                <li>Publicly disseminating any form of personally identifiable information (PII) is strictly disallowed.</li>
+                <li>The fraudulent assumption of staff identities or the impersonation of other community members is prohibited.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>📚 Academic Environment Rules</h2>
+            <ol start="13">
+                <li>Study rooms are reserved exclusively for scholastic endeavors; members are requested to vacate these spaces when engaging in leisure activities.</li>
+                <li>Rapidly alternating between various voice channels (VC hopping) is considered disruptive behavior.</li>
+                <li>Acoustic disturbances must be minimized; ensure microphones are muted unless active participation is required.</li>
+                <li><strong>Visual Presence Etiquette:</strong> We require professional conduct during video sessions. The use of controlled substances (tobacco, vaping, alcohol) is prohibited. Attire and posture must remain modest and appropriate for a communal learning setting. <br>
+                <span class="sub-text">Note: Streaming non-academic content is permitted exclusively within the 'Chill Room' or 'Custom VCs'. In Custom VCs, participants may report grievances regarding content, though the room owner is granted reasonable discretion over their private stream.</span></li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>💬 Communication Standards</h2>
+            <ol start="17">
+                <li>Academic discourse should be confined to designated study channels. This restriction is waived for general, international, and leisure-focused channels.</li>
+                <li>Foster a constructive and encouraging atmosphere. Melancholy or heavy discourse should be redirected to the #venting-channel, utilizing appropriate content warnings.</li>
+                <li>Self-harm references or morbid jests are strictly forbidden. If you are experiencing a crisis, we urge you to consult a mental health professional. <br>
+                <span class="sub-text">Resource: Please refer to the #server-info channel for a dedicated list of international support links and crisis resources.</span></li>
+                <li>Communication within official corridors must be in English, with exceptions granted for designated #languages and #international channels.</li>
+                <li>The use of profanity or vulgar linguistics is discouraged.</li>
+                <li>The proliferation of "walls of text," emoji saturation, and repetitive messaging is prohibited.</li>
+                <li>Refrain from unnecessary administrative or member pings to respect the concentration of those studying.</li>
+                <li>Theological and political debates are prohibited to maintain a neutral, focus-driven environment.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>🌟 Commercial & Social Conduct</h2>
+            <ol start="25">
+                <li>Gratuitous trolling or bad-faith interactions are not tolerated.</li>
+                <li><strong>Solicitation Policy:</strong> Direct or indirect self-promotion, including server invitations and survey distribution, is prohibited within public channels. <br>
+                <span class="sub-text">Clarification: You may politely approach individuals via Private Message (DM) to share opportunities, provided the outreach is not coercive or excessive.</span></li>
+                <li>The promotion of paid academic or tuition services is disallowed.</li>
+                <li>Academic integrity is paramount; do not participate in or facilitate "homework-for-hire" or cheating services.</li>
+                <li>Harassment, verbal disparagement, and ad hominem attacks are strictly prohibited.</li>
+            </ol>
+        </section>
+
+        <footer>
+            Questions regarding moderation decisions should be directed privately to the "Contact Staff" bot on our Discord server.
+        </footer>
+    </div>
+
 </body>
 </html>
